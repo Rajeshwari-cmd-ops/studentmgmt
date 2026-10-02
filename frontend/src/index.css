@@ -25,10 +25,18 @@
   --gold-subtle: #FDF8EB;       /* Warm Gold Subtle */
   --gold-border: #EEDAA2;       /* Gold Border */
 
+  /* Supporting Color: Warm Sage Green */
+  --sage: #6F8F72;              /* Warm Sage Green (#6F8F72) */
+  --sage-dark: #567359;         /* Darker Sage for high-contrast text */
+  --sage-light: #EBF1EC;        /* Soft Sage Tint for badges/pills */
+  --sage-subtle: #F3F7F4;       /* Ultra-light Sage Background */
+  --sage-border: #C1D4C3;       /* Delicate Sage Border */
+
   /* Semantic Status Colors */
-  --success: #15803D;           /* Success (#15803D) */
-  --success-bg: #ECFDF5;
-  --success-border: #A7F3D0;
+  --success: #6F8F72;           /* Warm Sage Success (#6F8F72) */
+  --success-dark: #567359;
+  --success-bg: #F3F7F4;
+  --success-border: #C1D4C3;
   
   --warning: #B45309;           /* Warning (#B45309) */
   --warning-bg: #FFFBEB;
@@ -3749,17 +3757,19 @@ button, input, select, textarea {
 
 .badge-md { padding: 3px 8px; font-size: 0.75rem; }
 .badge-sm { padding: 2px 6px; font-size: 0.68rem; }
-.badge-success { background: var(--success-bg); color: var(--success); border: 1px solid var(--success-border); }
+.badge-success { background: var(--success-bg); color: var(--sage-dark); border: 1px solid var(--success-border); font-weight: 700; }
 .badge-warning { background: var(--warning-bg); color: var(--warning); border: 1px solid var(--warning-border); }
 .badge-danger { background: var(--danger-bg); color: var(--danger); border: 1px solid var(--danger-border); }
 .badge-neutral { background: var(--bg-subtle); color: var(--text-secondary); border: 1px solid var(--border-main); }
 .badge-primary { background: var(--soft-lavender); color: var(--primary-purple); border: 1px solid var(--light-lavender); }
+.badge-sage { background: var(--sage-light); color: var(--sage-dark); border: 1px solid var(--sage-border); font-weight: 700; }
 
 /* Modals */
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(19, 37, 61, 0.6);
+  background: rgba(43, 23, 49, 0.65);
+  backdrop-filter: blur(3px);
   display: flex;
   align-items: center;
   justify-content: center;
