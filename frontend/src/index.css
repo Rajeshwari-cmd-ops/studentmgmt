@@ -121,15 +121,27 @@
   padding: 0;
 }
 
-html,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   min-height: 100%;
-  scroll-behavior: smooth;
-  overscroll-behavior: none;
-  overscroll-behavior-y: none;
+  height: auto;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: visible;
   background-color: var(--bg-app);
   color: var(--text-primary);
   font-family: var(--font-sans);
@@ -137,29 +149,38 @@ body {
   font-size: 0.9375rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
 }
 
 #root,
-.fic-root-app,
-.institutional-site-wrapper,
-.institutional-site-wrapper > main {
+.fic-root-app {
   width: 100%;
-  max-width: none;
+  min-height: 100vh;
+  height: auto;
   margin: 0;
   padding: 0;
+  position: relative;
+  overflow: visible;
   box-sizing: border-box;
 }
 
 .institutional-site-wrapper {
+  width: 100%;
   min-height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: visible;
   background-color: var(--bg-app);
+  box-sizing: border-box;
 }
 
 .institutional-site-wrapper > main {
+  width: 100%;
   flex: 1 0 auto;
+  position: relative;
+  overflow: visible;
+  box-sizing: border-box;
 }
 
 .portal-experience-wrapper {
@@ -167,9 +188,13 @@ body {
   padding: 0;
   width: 100%;
   min-height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: visible;
   background-color: var(--bg-app);
+  box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
