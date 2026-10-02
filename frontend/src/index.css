@@ -1,60 +1,66 @@
 /* ==========================================================================
-   FIC Institute - Multi-Color Professional Academic Design System
+   FIC Institute - Refined Purple Academic Design System
    Brand: "Learning Today. Building Tomorrow."
    ========================================================================== */
 
 :root {
-  /* Core Color System */
-  --primary: #1e3a5f;           /* Deep Slate Navy (Brand Structure & Sidebar) */
-  --primary-dark: #13253d;      /* Topbars & Dark Structural Highlights */
-  --primary-light: #2c5282;     /* Slate Navy Hover */
-  --secondary: #5f6b7a;         /* Secondary Text (Muted but clearly visible) */
-  --accent-blue: #1e40af;       /* Primary buttons (#1E40AF) */
-  --accent-blue-hover: #1d3996;
-  --accent-blue-subtle: #eff6ff;
-  --accent-blue-border: #bfdbfe;
+  /* Core Color System (Refined Purple Academic Theme) */
+  --primary-purple: #54245F;     /* Primary Purple */
+  --deep-purple: #3E1948;        /* Deep Purple (Navbar, Sidebar, Hero sections, Dark Headers) */
+  --light-lavender: #D8B9E2;     /* Light Lavender (Borders, Secondary Accents) */
+  --soft-lavender: #F2EAF5;      /* Soft Lavender (Subtle Section Backgrounds, Icon Blocks) */
   
-  --gold: #d4a72c;              /* Accent (#D4A72C) */
-  --gold-hover: #b88d1b;
-  --gold-subtle: #fef9e7;
-  --gold-border: #f6e09e;
+  --primary: #54245F;           /* Primary Purple */
+  --primary-dark: #3E1948;      /* Deep Purple */
+  --primary-light: #6B3078;     /* Purple Hover */
+  --secondary: #6E6173;         /* Secondary Text (Muted Gray-Purple) */
+  
+  --accent-blue: #54245F;       /* Primary Action / Button (#54245F) */
+  --accent-blue-hover: #3E1948; /* Deep Purple Hover */
+  --accent-blue-subtle: #F2EAF5;/* Soft Lavender Subtle */
+  --accent-blue-border: #D8B9E2;/* Light Lavender Border */
+  
+  --gold: #C9A227;              /* Accent Gold (#C9A227) */
+  --gold-hover: #B38E1E;        /* Darker Gold Hover */
+  --gold-subtle: #FDF8EB;       /* Warm Gold Subtle */
+  --gold-border: #EEDAA2;       /* Gold Border */
 
   /* Semantic Status Colors */
-  --success: #15803d;           /* Success (#15803D) */
-  --success-bg: #ecfdf5;
-  --success-border: #a7f3d0;
+  --success: #15803D;           /* Success (#15803D) */
+  --success-bg: #ECFDF5;
+  --success-border: #A7F3D0;
   
-  --warning: #b45309;           /* Warning (#B45309) */
-  --warning-bg: #fffbeb;
-  --warning-border: #fde68a;
+  --warning: #B45309;           /* Warning (#B45309) */
+  --warning-bg: #FFFBEB;
+  --warning-border: #FDE68A;
   
-  --danger: #b91c1c;            /* Danger (#B91C1C) */
-  --danger-bg: #fef2f2;
-  --danger-border: #fecaca;
+  --danger: #B91C1C;            /* Danger (#B91C1C) */
+  --danger-bg: #FEF2F2;
+  --danger-border: #FECACA;
 
   /* Surfaces & Backgrounds */
-  --bg-app: #f5f7fa;            /* Main background (#F5F7FA) */
-  --bg-page: #f5f7fa;
-  --bg-subtle: #eef3f8;         /* Section headers block (#EEF3F8) */
-  --bg-table-header: #f1f5f9;   /* Table headers (#F1F5F9) */
-  --bg-btn-secondary: #e8eef7;  /* Secondary buttons (#E8EEF7) */
-  --text-btn-secondary: #1e3a5f;
-  --bg-card: #ffffff;           /* Card backgrounds (#FFFFFF) */
-  --white: #ffffff;
-  --border-main: #e2e8f0;       /* Border */
-  --border-subtle: #eef3f8;
+  --bg-app: #FAF9FB;            /* Page Background (#FAF9FB) */
+  --bg-page: #FAF9FB;
+  --bg-subtle: #F2EAF5;         /* Soft Lavender Block / Subtle Sections */
+  --bg-table-header: #F5EEF8;   /* Light Lavender Table Headers */
+  --bg-btn-secondary: #F2EAF5;  /* Secondary Buttons */
+  --text-btn-secondary: #54245F;
+  --bg-card: #FFFFFF;           /* Cards (#FFFFFF) */
+  --white: #FFFFFF;
+  --border-main: #E8E0EC;       /* Soft Purple Border */
+  --border-subtle: #F2EAF5;
 
   /* Typography Colors */
-  --text-primary: #172033;      /* Primary text: dark and highly readable */
-  --text-secondary: #5f6b7a;    /* Secondary text: muted but clearly visible */
-  --text-muted: #8a94a3;        /* Tertiary/muted text */
-  --text-tertiary: #8a94a3;
+  --text-primary: #2B1731;      /* Primary Text: Dark Purple */
+  --text-secondary: #6E6173;    /* Secondary Text: Muted Gray-Purple */
+  --text-muted: #938699;        /* Tertiary / Muted Text */
+  --text-tertiary: #938699;
 
-  /* Legacy / Compatibility Mapping */
+  /* Compatibility Mapping */
   --navy: var(--primary);
   --navy-dark: var(--primary-dark);
   --navy-light: var(--primary-light);
-  --warm-ivory: var(--bg-app);
+  --warm-ivory: var(--bg-subtle);
   --ivory-subtle: var(--bg-subtle);
   --charcoal: var(--text-primary);
   --charcoal-muted: var(--text-secondary);
@@ -94,8 +100,8 @@
   --radius-lg: 12px;
   --radius-full: 9999px;
 
-  --shadow-subtle: 0 1px 3px rgba(23, 32, 51, 0.04), 0 1px 2px rgba(23, 32, 51, 0.02);
-  --shadow-card: 0 2px 8px rgba(23, 32, 51, 0.06);
+  --shadow-subtle: 0 1px 3px rgba(43, 23, 49, 0.04), 0 1px 2px rgba(43, 23, 49, 0.02);
+  --shadow-card: 0 2px 8px rgba(43, 23, 49, 0.06);
 
   --container-max: 1280px;
 }
@@ -227,7 +233,7 @@ button, input, select, textarea {
 }
 
 .topbar-text {
-  color: #cbd5e1;
+  color: #D8B9E2;
 }
 
 .topbar-right {
@@ -237,7 +243,7 @@ button, input, select, textarea {
 }
 
 .topbar-link {
-  color: #cbd5e1;
+  color: #D8B9E2;
   cursor: pointer;
 }
 
@@ -246,7 +252,7 @@ button, input, select, textarea {
 }
 
 .topbar-dot {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(216, 185, 226, 0.4);
 }
 
 .topbar-btn {
@@ -654,7 +660,7 @@ button, input, select, textarea {
   bottom: 20px;
   left: 20px;
   right: 20px;
-  background: rgba(23, 43, 77, 0.94);
+  background: rgba(62, 25, 72, 0.95);
   color: #ffffff;
   padding: 10px 14px;
   border-radius: var(--radius-sm);
@@ -678,12 +684,12 @@ button, input, select, textarea {
 
 .caption-content span {
   font-size: 0.72rem;
-  color: #cbd5e1;
+  color: #D8B9E2;
 }
 
 /* Admission Strip */
 .admission-info-strip {
-  background: var(--navy);
+  background: var(--deep-purple);
   color: #ffffff;
   border-top: 3px solid var(--gold);
   margin: 0;
@@ -711,7 +717,7 @@ button, input, select, textarea {
   width: 36px;
   height: 36px;
   border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(216, 185, 226, 0.15);
   border: 1px solid var(--gold-border);
   display: flex;
   align-items: center;
@@ -726,7 +732,7 @@ button, input, select, textarea {
 
 .strip-label {
   font-size: 0.72rem;
-  color: #cbd5e1;
+  color: #D8B9E2;
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
@@ -1813,9 +1819,9 @@ button, input, select, textarea {
   margin: 0;
   margin-top: auto;
   padding: 0;
-  background: #0d1829;
-  color: #cbd5e1;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--deep-purple);
+  color: #D8B9E2;
+  border-top: 1px solid rgba(216, 185, 226, 0.15);
 }
 
 .footer-top-container {
@@ -1848,13 +1854,13 @@ button, input, select, textarea {
 
 .footer-inst-tagline {
   font-size: 0.72rem;
-  color: #94a3b8;
+  color: #D8B9E2;
   display: block;
 }
 
 .footer-brand-desc {
   font-size: 0.85rem;
-  color: #94a3b8;
+  color: #D8B9E2;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -1870,7 +1876,7 @@ button, input, select, textarea {
   display: flex;
   gap: 10px;
   align-items: flex-start;
-  color: #cbd5e1;
+  color: #F2EAF5;
 }
 
 .f-icon {
@@ -1900,7 +1906,7 @@ button, input, select, textarea {
 .footer-nav-list button {
   background: transparent;
   border: none;
-  color: #94a3b8;
+  color: #D8B9E2;
   font-size: 0.84rem;
   cursor: pointer;
   text-align: left;
@@ -1922,9 +1928,9 @@ button, input, select, textarea {
 
 .footer-bottom-strip {
   margin: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(216, 185, 226, 0.15);
   padding: 20px 0;
-  background: #09101c;
+  background: #2B1731;
 }
 
 .footer-bottom-inner {
@@ -1937,7 +1943,7 @@ button, input, select, textarea {
   flex-wrap: wrap;
   gap: 14px;
   font-size: 0.78rem;
-  color: #94a3b8;
+  color: #D8B9E2;
 }
 
 .footer-legal-links {
@@ -2087,7 +2093,7 @@ button, input, select, textarea {
 .nav-group-label {
   font-size: 0.68rem;
   font-weight: 700;
-  color: #94a3b8;
+  color: #D8B9E2;
   letter-spacing: 0.08em;
   padding: 8px 10px 6px;
 }
@@ -2104,7 +2110,7 @@ button, input, select, textarea {
   gap: 12px;
   padding: 10px 14px;
   border-radius: var(--radius-sm);
-  color: #cbd5e1;
+  color: #D8B9E2;
   font-weight: 500;
   font-size: 0.88rem;
   background: transparent;
@@ -2116,12 +2122,12 @@ button, input, select, textarea {
 }
 
 .nav-link:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(216, 185, 226, 0.12);
   color: #ffffff;
 }
 
 .nav-link.active {
-  background: var(--accent-blue);
+  background: var(--primary-purple);
   color: #ffffff;
   font-weight: 600;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
@@ -2141,12 +2147,12 @@ button, input, select, textarea {
 
 .sidebar-footer-card {
   padding: 14px 16px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(216, 185, 226, 0.15);
 }
 
 .support-card {
   background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(216, 185, 226, 0.2);
   padding: 10px 12px;
   border-radius: var(--radius-sm);
   display: flex;
@@ -2156,7 +2162,7 @@ button, input, select, textarea {
 
 .support-icon { color: var(--gold); }
 .support-text strong { display: block; font-size: 0.8rem; color: #ffffff; }
-.support-text span { font-size: 0.7rem; color: #94a3b8; }
+.support-text span { font-size: 0.7rem; color: #D8B9E2; }
 
 .app-header {
   height: 64px;
