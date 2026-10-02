@@ -21,8 +21,17 @@ export const InstHero = ({ onOpenPortal, onExplore }) => {
               <span className="kicker-text">FIC INSTITUTE OF HIGHER LEARNING</span>
             </div>
 
-            <h1 className="hero-headline">
-              Empowering Students Through Education, Skills &amp; Opportunity
+            <h1 className="hero-headline" aria-label="Empowering Students Through Education, Skills & Opportunity">
+              {['Empowering', 'Students', 'Through', 'Education,', 'Skills', '&', 'Opportunity'].map((word, idx) => (
+                <span key={idx} className="hero-word-wrap">
+                  <span
+                    className="hero-word-inner"
+                    style={{ animationDelay: `${idx * 45}ms` }}
+                  >
+                    {word}
+                  </span>
+                </span>
+              ))}
             </h1>
 
             <p className="hero-description">

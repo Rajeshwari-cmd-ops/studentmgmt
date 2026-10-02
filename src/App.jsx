@@ -122,7 +122,7 @@ const MainApp = () => {
     );
 
     const elementsToReveal = document.querySelectorAll(
-      '.editorial-section-head, .pillar-card, .academic-program-card, .why-feature-card, .experience-visual-card, .experience-narrative-card, .notices-board-container, .portal-showcase-card, .stat-editorial-item, .testimonial-card, .cta-card'
+      '.editorial-section-head, .about-narrative-col, .about-editorial-grid, .about-section, .pillar-card, .academic-program-card, .why-feature-card, .experience-visual-card, .experience-narrative-card, .student-experience-section, .notices-board-container, .portal-showcase-card, .stat-editorial-item, .testimonial-card, .cta-card'
     );
 
     elementsToReveal.forEach((el) => observer.observe(el));
