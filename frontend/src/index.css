@@ -569,11 +569,24 @@ button, input, select, textarea {
   flex-direction: column;
 }
 
+/* Hero Text Fade-Up on Page Load */
+@keyframes heroFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero-kicker {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 12px;
+  animation: heroFadeUp 500ms ease-out both;
 }
 
 .kicker-line {
@@ -597,6 +610,7 @@ button, input, select, textarea {
   letter-spacing: -0.02em;
   line-height: 1.18;
   margin-bottom: 16px;
+  animation: heroFadeUp 550ms ease-out both;
 }
 
 .hero-description {
@@ -605,6 +619,7 @@ button, input, select, textarea {
   line-height: 1.55;
   margin-bottom: 24px;
   max-width: 580px;
+  animation: heroFadeUp 550ms ease-out 150ms both;
 }
 
 .hero-cta-group {
@@ -613,6 +628,7 @@ button, input, select, textarea {
   gap: 12px;
   flex-wrap: wrap;
   margin-bottom: 24px;
+  animation: heroFadeUp 550ms ease-out 250ms both;
 }
 
 .hero-trust-badges {
@@ -622,6 +638,7 @@ button, input, select, textarea {
   flex-wrap: wrap;
   padding-top: 16px;
   border-top: 1px solid var(--border-subtle);
+  animation: heroFadeUp 550ms ease-out 350ms both;
 }
 
 .trust-item {
@@ -4131,3 +4148,182 @@ button, input, select, textarea {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================================================
+   Professional Academic Motion & Scroll Reveal System
+   ========================================================================== */
+
+/* Section Headers Fade-Up */
+.editorial-section-head {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 550ms ease-out, transform 550ms ease-out;
+  will-change: opacity, transform;
+}
+
+.editorial-section-head.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.editorial-section-head .section-kicker {
+  transition: opacity 450ms ease-out, transform 450ms ease-out;
+}
+
+.editorial-section-head .section-title {
+  transition: opacity 550ms ease-out 80ms, transform 550ms ease-out 80ms;
+}
+
+.editorial-section-head .section-intro-text {
+  transition: opacity 550ms ease-out 160ms, transform 550ms ease-out 160ms;
+}
+
+/* Cards & Content Reveal */
+.pillar-card,
+.academic-program-card,
+.why-feature-card,
+.experience-visual-card,
+.experience-narrative-card,
+.notices-board-container,
+.portal-showcase-card,
+.stat-editorial-item,
+.testimonial-card,
+.cta-card {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 500ms cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 500ms cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.2s ease, 
+              border-color 0.2s ease;
+  will-change: opacity, transform;
+}
+
+.pillar-card.is-visible,
+.academic-program-card.is-visible,
+.why-feature-card.is-visible,
+.experience-visual-card.is-visible,
+.experience-narrative-card.is-visible,
+.notices-board-container.is-visible,
+.portal-showcase-card.is-visible,
+.stat-editorial-item.is-visible,
+.testimonial-card.is-visible,
+.cta-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered Delay for Cards (80ms - 120ms intervals) */
+.pillar-card:nth-child(1),
+.academic-program-card:nth-child(1),
+.why-feature-card:nth-child(1),
+.stat-editorial-item:nth-child(1),
+.testimonial-card:nth-child(1) {
+  transition-delay: 0ms;
+}
+
+.pillar-card:nth-child(2),
+.academic-program-card:nth-child(2),
+.why-feature-card:nth-child(2),
+.stat-editorial-item:nth-child(2),
+.testimonial-card:nth-child(2) {
+  transition-delay: 90ms;
+}
+
+.pillar-card:nth-child(3),
+.academic-program-card:nth-child(3),
+.why-feature-card:nth-child(3),
+.stat-editorial-item:nth-child(3),
+.testimonial-card:nth-child(3) {
+  transition-delay: 180ms;
+}
+
+.pillar-card:nth-child(4),
+.academic-program-card:nth-child(4),
+.stat-editorial-item:nth-child(4) {
+  transition-delay: 270ms;
+}
+
+/* Subtle Button Lift & Smooth Transitions on Hover */
+.btn-academic-primary,
+.btn-academic-secondary,
+.btn-academic-gold,
+.btn-portal-header,
+.btn-portal-full,
+.btn-primary,
+.btn-secondary {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), 
+              background-color 0.2s ease, 
+              color 0.2s ease, 
+              border-color 0.2s ease, 
+              box-shadow 0.2s ease !important;
+}
+
+.btn-academic-primary:hover,
+.btn-academic-gold:hover,
+.btn-portal-header:hover,
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(62, 25, 72, 0.2);
+}
+
+.btn-academic-secondary:hover,
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(62, 25, 72, 0.08);
+}
+
+.prog-explore-link,
+.notice-view-btn {
+  transition: transform 0.2s ease, color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.prog-explore-link:hover,
+.notice-view-btn:hover {
+  transform: translateX(3px);
+}
+
+/* Static Navbar Text */
+.inst-header,
+.inst-topbar,
+.inst-navbar,
+.inst-nav-links,
+.inst-nav-anchor,
+.inst-brand,
+.topbar-left,
+.topbar-right {
+  animation: none !important;
+  transform: none !important;
+}
+
+/* Accessibility: Support prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .hero-kicker,
+  .hero-headline,
+  .hero-description,
+  .hero-cta-group,
+  .hero-trust-badges,
+  .editorial-section-head,
+  .pillar-card,
+  .academic-program-card,
+  .why-feature-card,
+  .experience-visual-card,
+  .experience-narrative-card,
+  .notices-board-container,
+  .portal-showcase-card,
+  .stat-editorial-item,
+  .testimonial-card,
+  .cta-card {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
+

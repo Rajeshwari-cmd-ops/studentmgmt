@@ -103,6 +103,33 @@ const MainApp = () => {
     fetchFromMongoDB();
   }, []);
 
+  // Scroll reveal observer for institutional landing page text and cards
+  useEffect(() => {
+    if (viewMode !== 'institutional') return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '0px 0px -30px 0px'
+      }
+    );
+
+    const elementsToReveal = document.querySelectorAll(
+      '.editorial-section-head, .pillar-card, .academic-program-card, .why-feature-card, .experience-visual-card, .experience-narrative-card, .notices-board-container, .portal-showcase-card, .stat-editorial-item, .testimonial-card, .cta-card'
+    );
+
+    elementsToReveal.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, [viewMode]);
+
   // Handlers for Student CRUD
   const handleSaveStudent = async (studentData) => {
     const exists = students.some((s) => s.id === studentData.id);
