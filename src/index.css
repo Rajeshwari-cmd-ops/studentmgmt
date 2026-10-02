@@ -1346,6 +1346,9 @@ button, input, select, textarea {
   border-radius: var(--radius-md);
   position: relative;
   box-shadow: var(--shadow-card);
+  animation: heroCardPulse 2s ease-in-out infinite alternate;
+  transform-origin: center center;
+  will-change: transform;
 }
 
 .experience-main-img {
