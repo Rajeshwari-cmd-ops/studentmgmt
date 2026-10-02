@@ -874,7 +874,7 @@ button, input, select, textarea {
 }
 
 .about-quote-overlay {
-  background: var(--navy);
+  background: var(--deep-purple);
   color: #ffffff;
   padding: 16px 20px;
   border-radius: var(--radius-sm);
@@ -887,7 +887,7 @@ button, input, select, textarea {
   font-size: 0.95rem;
   font-style: italic;
   line-height: 1.45;
-  color: #f1f5f9;
+  color: var(--soft-lavender);
 }
 
 .quote-author {
@@ -1259,7 +1259,7 @@ button, input, select, textarea {
   bottom: 24px;
   left: 24px;
   right: 24px;
-  background: rgba(23, 43, 77, 0.95);
+  background: rgba(62, 25, 72, 0.95);
   color: #ffffff;
   padding: 12px 16px;
   border-radius: var(--radius-sm);
@@ -1562,7 +1562,7 @@ button, input, select, textarea {
 }
 
 .showcase-subtitle {
-  color: #cbd5e1;
+  color: #D8B9E2;
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 24px;
@@ -1630,16 +1630,16 @@ button, input, select, textarea {
 
 .pf-desc {
   font-size: 0.8rem;
-  color: #cbd5e1;
+  color: #D8B9E2;
   line-height: 1.45;
 }
 
 .portal-showcase-bottom {
   text-align: center;
   padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(216, 185, 226, 0.2);
   font-size: 0.78rem;
-  color: #94a3b8;
+  color: #D8B9E2;
 }
 
 /* ==========================================================================
@@ -1797,7 +1797,7 @@ button, input, select, textarea {
 }
 
 .cta-subheading {
-  color: #cbd5e1;
+  color: #D8B9E2;
   font-size: 1rem;
   max-width: 640px;
   margin: 0 auto 32px;
@@ -2071,7 +2071,7 @@ button, input, select, textarea {
 
 .brand-tagline {
   font-size: 0.72rem;
-  color: #94a3b8;
+  color: #D8B9E2;
   display: block;
   font-weight: 500;
 }
@@ -2080,7 +2080,7 @@ button, input, select, textarea {
   display: none;
   background: transparent;
   border: none;
-  color: #94a3b8;
+  color: #D8B9E2;
   cursor: pointer;
 }
 
@@ -2203,7 +2203,7 @@ button, input, select, textarea {
 }
 
 .crumb-main { font-size: 0.86rem; color: var(--text-secondary); font-weight: 500; }
-.crumb-sep { color: #cbd5e1; font-size: 0.86rem; }
+.crumb-sep { color: #D8B9E2; font-size: 0.86rem; }
 .crumb-active { font-size: 1.05rem; font-weight: 700; color: var(--text-primary); white-space: nowrap; }
 
 .header-center {
@@ -2230,7 +2230,7 @@ button, input, select, textarea {
 .global-search-box input {
   width: 100%;
   padding: 8px 14px 8px 36px;
-  background: #f8fafc;
+  background: var(--bg-app);
   border: 1px solid var(--border-main);
   border-radius: var(--radius-sm);
   font-size: 0.86rem;
@@ -2240,8 +2240,8 @@ button, input, select, textarea {
 
 .global-search-box input:focus {
   background: #ffffff;
-  border-color: var(--accent-blue);
-  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.12);
+  border-color: var(--primary-purple);
+  box-shadow: 0 0 0 2px rgba(84, 36, 95, 0.15);
 }
 
 .search-dropdown-menu {
@@ -2268,7 +2268,7 @@ button, input, select, textarea {
 }
 
 .search-dropdown-item:hover {
-  background: #f8fafc;
+  background: var(--bg-subtle);
 }
 
 .search-stu-img {
@@ -2302,20 +2302,20 @@ button, input, select, textarea {
   display: flex;
   align-items: center;
   gap: 6px;
-  background: var(--accent-blue-subtle);
-  border: 1px solid var(--accent-blue-border);
+  background: var(--soft-lavender);
+  border: 1px solid var(--light-lavender);
   padding: 6px 12px;
   border-radius: var(--radius-sm);
   font-size: 0.78rem;
   font-weight: 600;
-  color: var(--primary);
+  color: var(--primary-purple);
 }
 
 .header-icon-button {
   width: 36px;
   height: 36px;
   border-radius: var(--radius-sm);
-  background: #f8fafc;
+  background: var(--bg-app);
   border: 1px solid var(--border-main);
   display: flex;
   align-items: center;
@@ -2328,8 +2328,8 @@ button, input, select, textarea {
 
 .header-icon-button:hover {
   background: #ffffff;
-  border-color: var(--accent-blue);
-  color: var(--accent-blue);
+  border-color: var(--primary-purple);
+  color: var(--primary-purple);
 }
 
 .unread-dot {
@@ -2478,7 +2478,7 @@ button, input, select, textarea {
   gap: 12px;
 }
 
-/* Section Headers: very light blue-gray block #EEF3F8 with dark text */
+/* Section Headers: Soft Lavender block #F2EAF5 with dark purple text */
 .dashboard-hero-banner {
   background: var(--bg-subtle);
   color: var(--text-primary);
@@ -2488,17 +2488,17 @@ button, input, select, textarea {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  border: 1px solid #d8e2ec;
-  border-left: 4px solid var(--accent-blue);
+  border: 1px solid var(--border-main);
+  border-left: 4px solid var(--primary-purple);
 }
 
 .hero-text-side .hero-pill {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: #e0e8f2;
-  color: var(--primary);
-  border: 1px solid #cbd7e6;
+  background: var(--light-lavender);
+  color: var(--deep-purple);
+  border: 1px solid var(--light-lavender);
   font-size: 0.74rem;
   font-weight: 700;
   padding: 4px 10px;
@@ -2598,7 +2598,7 @@ button, input, select, textarea {
 
 .kpi-tag.positive { background: var(--success-bg); color: var(--success); border: 1px solid var(--success-border); }
 .kpi-tag.highlight { background: var(--warning-bg); color: var(--warning); border: 1px solid var(--warning-border); }
-.kpi-tag.neutral { background: #f1f5f9; color: var(--text-secondary); border: 1px solid var(--border-main); }
+.kpi-tag.neutral { background: var(--bg-subtle); color: var(--text-secondary); border: 1px solid var(--border-main); }
 
 .kpi-footer-link {
   display: flex;
@@ -2606,7 +2606,7 @@ button, input, select, textarea {
   justify-content: space-between;
   font-size: 0.78rem;
   font-weight: 600;
-  color: var(--accent-blue);
+  color: var(--primary-purple);
   border-top: 1px solid var(--border-subtle);
   padding-top: 10px;
 }
@@ -2640,7 +2640,7 @@ button, input, select, textarea {
   align-items: center;
   justify-content: space-between;
   background: var(--bg-subtle);
-  border-bottom: 1px solid #d8e2ec;
+  border-bottom: 1px solid var(--border-main);
 }
 
 .card-heading {
@@ -2682,8 +2682,8 @@ button, input, select, textarea {
 }
 
 .quick-action-btn:hover {
-  border-color: var(--accent-blue);
-  background: #f8fafc;
+  border-color: var(--primary-purple);
+  background: var(--bg-subtle);
   box-shadow: var(--shadow-subtle);
 }
 
@@ -2807,14 +2807,14 @@ button, input, select, textarea {
   align-items: flex-start;
   gap: 14px;
   padding: 12px 14px;
-  background: #f8fafc;
+  background: var(--bg-app);
   border: 1px solid var(--border-main);
   border-radius: var(--radius-sm);
   transition: border-color 0.15s ease;
 }
 
 .exam-card-item:hover {
-  border-color: var(--accent-blue);
+  border-color: var(--primary-purple);
 }
 
 .exam-date-badge {
@@ -2822,7 +2822,7 @@ button, input, select, textarea {
   align-items: center;
   gap: 6px;
   background: var(--bg-subtle);
-  border: 1px solid #d8e2ec;
+  border: 1px solid var(--border-main);
   padding: 6px 10px;
   border-radius: var(--radius-xs);
   font-size: 0.75rem;
@@ -2986,9 +2986,9 @@ button, input, select, textarea {
 }
 
 .icon-action-btn:hover {
-  background: #f1f5f9;
-  border-color: var(--accent-blue);
-  color: var(--accent-blue);
+  background: var(--bg-subtle);
+  border-color: var(--primary-purple);
+  color: var(--primary-purple);
 }
 
 /* Filters & Inputs */
@@ -3015,7 +3015,7 @@ button, input, select, textarea {
 .filter-search-box input {
   width: 100%;
   padding: 7px 12px 7px 34px;
-  background: #f8fafc;
+  background: var(--bg-app);
   border: 1px solid var(--border-main);
   border-radius: var(--radius-sm);
   font-size: 0.84rem;
@@ -3025,7 +3025,7 @@ button, input, select, textarea {
 
 .filter-search-box input:focus {
   background: #ffffff;
-  border-color: var(--accent-blue);
+  border-color: var(--primary-purple);
 }
 
 .filter-dropdowns-row {
@@ -3050,7 +3050,7 @@ button, input, select, textarea {
 .filter-select-group select,
 .filter-select-group input[type="date"] {
   padding: 6px 10px;
-  background: #f8fafc;
+  background: var(--bg-app);
   border: 1px solid var(--border-main);
   border-radius: var(--radius-sm);
   font-size: 0.82rem;
@@ -3101,7 +3101,7 @@ button, input, select, textarea {
   font-size: 0.75rem;
   font-weight: 800;
   background: var(--bg-subtle);
-  border: 1px solid #d8e2ec;
+  border: 1px solid var(--border-main);
   color: var(--primary);
   padding: 3px 8px;
   border-radius: var(--radius-xs);
@@ -3307,12 +3307,12 @@ button, input, select, textarea {
 }
 
 .report-tab-btn:hover {
-  background: #f1f5f9;
+  background: var(--bg-subtle);
   color: var(--text-primary);
 }
 
 .report-tab-btn.active {
-  background: var(--accent-blue);
+  background: var(--primary-purple);
   color: #ffffff;
 }
 
@@ -3329,7 +3329,7 @@ button, input, select, textarea {
 
 .attendance-toggle-group {
   display: inline-flex;
-  background: #f1f5f9;
+  background: var(--bg-subtle);
   border: 1px solid var(--border-main);
   border-radius: var(--radius-sm);
   padding: 2px;
@@ -3374,7 +3374,7 @@ button, input, select, textarea {
 .card-footer-action {
   padding: 14px 20px;
   background: var(--bg-subtle);
-  border-top: 1px solid #d8e2ec;
+  border-top: 1px solid var(--border-main);
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -3392,7 +3392,7 @@ button, input, select, textarea {
   align-items: center;
   gap: 20px;
   background: var(--bg-subtle);
-  border: 1px solid #d8e2ec;
+  border: 1px solid var(--border-main);
   border-radius: var(--radius-md);
   padding: 20px;
 }
@@ -3559,29 +3559,29 @@ button, input, select, textarea {
   white-space: nowrap;
 }
 
-/* Primary buttons: #1E40AF with white text */
+/* Primary buttons: Primary Purple #54245F with white text */
 .btn-primary { 
-  background: #1e40af; 
+  background: var(--primary-purple); 
   color: #ffffff; 
-  border-color: #1e40af; 
+  border-color: var(--primary-purple); 
 }
 .btn-primary:hover { 
-  background: #1d3996; 
-  border-color: #1d3996; 
+  background: var(--deep-purple); 
+  border-color: var(--deep-purple); 
   color: #ffffff;
-  box-shadow: 0 2px 6px rgba(30, 64, 175, 0.25);
+  box-shadow: 0 2px 6px rgba(62, 25, 72, 0.25);
 }
 
-/* Secondary buttons: #E8EEF7 with #1E3A5F text */
+/* Secondary buttons: Soft Lavender #F2EAF5 with #54245F text */
 .btn-secondary { 
-  background: #e8eef7; 
-  color: #1e3a5f; 
-  border-color: #d0ddeb; 
+  background: var(--soft-lavender); 
+  color: var(--primary-purple); 
+  border-color: var(--light-lavender); 
 }
 .btn-secondary:hover { 
-  background: #dde6f3; 
-  border-color: #bfd2e6; 
-  color: #13253d;
+  background: #E8D9EC; 
+  border-color: var(--primary-purple); 
+  color: var(--deep-purple);
 }
 
 /* Danger buttons: #B91C1C with white text */
@@ -3597,14 +3597,14 @@ button, input, select, textarea {
 
 .btn-outline { 
   background: #ffffff; 
-  border-color: #cbd5e1; 
+  border-color: var(--border-main); 
   color: var(--text-primary); 
   font-weight: 600;
 }
 .btn-outline:hover { 
-  background: #f1f5f9; 
-  border-color: #1e40af; 
-  color: #1e40af; 
+  background: var(--soft-lavender); 
+  border-color: var(--primary-purple); 
+  color: var(--primary-purple); 
 }
 
 .btn-white { 
@@ -3614,7 +3614,7 @@ button, input, select, textarea {
   font-weight: 600;
 }
 .btn-white:hover { 
-  background: #f8fafc; 
+  background: var(--soft-lavender); 
 }
 
 .btn-outline-white { 
@@ -3647,8 +3647,8 @@ button, input, select, textarea {
 .badge-success { background: var(--success-bg); color: var(--success); border: 1px solid var(--success-border); }
 .badge-warning { background: var(--warning-bg); color: var(--warning); border: 1px solid var(--warning-border); }
 .badge-danger { background: var(--danger-bg); color: var(--danger); border: 1px solid var(--danger-border); }
-.badge-neutral { background: #f1f5f9; color: var(--text-secondary); border: 1px solid var(--border-main); }
-.badge-primary { background: var(--accent-blue-subtle); color: var(--accent-blue); border: 1px solid var(--accent-blue-border); }
+.badge-neutral { background: var(--bg-subtle); color: var(--text-secondary); border: 1px solid var(--border-main); }
+.badge-primary { background: var(--soft-lavender); color: var(--primary-purple); border: 1px solid var(--light-lavender); }
 
 /* Modals */
 .modal-backdrop {
@@ -3685,7 +3685,7 @@ button, input, select, textarea {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--border-main);
-  background: #f8fafc;
+  background: var(--bg-subtle);
 }
 
 .modal-title {
@@ -3716,7 +3716,7 @@ button, input, select, textarea {
 .modal-footer {
   padding: 14px 20px;
   border-top: 1px solid var(--border-main);
-  background: #f8fafc;
+  background: var(--bg-subtle);
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -3755,8 +3755,8 @@ button, input, select, textarea {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: var(--accent-blue);
-  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.12);
+  border-color: var(--primary-purple);
+  box-shadow: 0 0 0 2px rgba(84, 36, 95, 0.15);
 }
 
 .form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
@@ -3780,15 +3780,18 @@ button, input, select, textarea {
 .font-bold { font-weight: 700; }
 .font-mono { font-family: var(--font-mono); }
 
-/* Multi-Color Helpers */
-.bg-blue-subtle { background: var(--accent-blue-subtle); color: var(--accent-blue); border: 1px solid var(--accent-blue-border); }
+/* Theme Helpers */
+.bg-purple-subtle,
+.bg-blue-subtle { background: var(--soft-lavender); color: var(--primary-purple); border: 1px solid var(--light-lavender); }
 .bg-green-subtle { background: var(--success-bg); color: var(--success); border: 1px solid var(--success-border); }
 .bg-amber-subtle { background: var(--warning-bg); color: var(--warning); border: 1px solid var(--warning-border); }
-.bg-primary-subtle { background: #f0f4f8; color: var(--primary); border: 1px solid #cbd5e1; }
+.bg-primary-subtle { background: var(--soft-lavender); color: var(--primary-purple); border: 1px solid var(--light-lavender); }
 .bg-gold-subtle { background: var(--gold-subtle); color: var(--gold); border: 1px solid var(--gold-border); }
 .bg-red-subtle { background: var(--danger-bg); color: var(--danger); border: 1px solid var(--danger-border); }
+.bg-sky-subtle { background: var(--soft-lavender); color: var(--primary-purple); border: 1px solid var(--light-lavender); }
+.bg-indigo-subtle { background: var(--soft-lavender); color: var(--primary-purple); border: 1px solid var(--light-lavender); }
 
-.text-accent-blue { color: var(--accent-blue); }
+.text-accent-blue { color: var(--primary-purple); }
 .text-success { color: var(--success); }
 .text-warning { color: var(--warning); }
 .text-danger { color: var(--danger); }
@@ -3798,6 +3801,7 @@ button, input, select, textarea {
 .text-muted { color: var(--text-muted); }
 .text-navy { color: var(--primary); }
 .text-indigo { color: var(--primary); }
+.text-sky { color: var(--primary-light); }
 .text-emerald { color: var(--success); }
 .text-amber { color: var(--warning); }
 .text-rose { color: var(--danger); }
@@ -3861,13 +3865,13 @@ button, input, select, textarea {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: var(--primary);
+  background: var(--deep-purple);
   color: #ffffff;
   padding: 10px 14px;
   border-radius: var(--radius-sm);
   box-shadow: var(--shadow-card);
   font-size: 0.84rem;
-  border-left: 3px solid var(--accent-blue);
+  border-left: 3px solid var(--gold);
 }
 
 .toast-card.toast-error { border-left-color: var(--danger); }
@@ -3875,7 +3879,7 @@ button, input, select, textarea {
 .toast-close {
   background: transparent;
   border: none;
-  color: #94a3b8;
+  color: #D8B9E2;
   cursor: pointer;
 }
 
